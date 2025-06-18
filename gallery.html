@@ -9,6 +9,7 @@
       body {
         margin: 0;
         font-family: Impact;
+        background-color: #deb878;
       }
 
       .topnav {
@@ -36,6 +37,23 @@
         background-color: #04aa6d;
         color: white;
       }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+      .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+      }
+      .myslides {
+        display: none;
+        max-height: 100%;
+        max-width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -48,6 +66,30 @@
       <a href="dreamplace.html">Dream Place</a>
       <a href="gaming.html">Gaming</a>
       <a href="hobby.html">Hobby</a>
+    </div>
+    <h1>My Favourite Memories</h1>
+    <div class="carousel-container">
+      <img
+        class="myslides"
+        src="https://preview.redd.it/lets-just-be-honest-travis-just-wants-to-look-ugly-in-all-v0-qf6bzin3zkrb1.jpeg?width=480&format=pjpg&auto=webp&s=b02ba4465847c252b48deb81c713848e3dbf023a"
+        height="600"
+        width="900"
+        alt="Slide1"
+      />
+      <img
+        class="myslides"
+        src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/04/valorant-black-characters-representation-1.jpg"
+        height="600"
+        width="900"
+        alt="Slide2"
+      />
+      <img
+        class="myslides"
+        src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2024/04/valorant-clove-abilities-interview-pcgamesn.jpg"
+        height="600"
+        width="900"
+        alt="Slide3"
+      />
     </div>
     <script src="script.js"></script>
   </body>
