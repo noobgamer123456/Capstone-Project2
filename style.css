@@ -1,0 +1,56 @@
+p {
+  font-size: 20px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,w_1406,h_790,x_0,y_515/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/Ashton-Hall-2-c48826f0129ffe2d4bb852b17de439e7.jpg");
+  min-height: 400px;
+}
+.pimg2 {
+  background-image: url("https://img.etimg.com/thumb/width-1600,height-900,imgsize-408673,resizemode-75,msid-67189761/magazines/panache/youtube-star-danish-zehen-passes-away-in-car-accident-in-mumbai.jpg");
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url("https://images.news18.com/ibnlive/uploads/2025/04/ishowspeed-origin-story-2025-04-5ff8430bcf1a0e4d5529a03017774a20-16x9.png?impolicy=website&width=640&height=360");
+  min-height: 400px;
+}
+.section {
+  text-align: center;
+  padding: 50px;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  opacity: 0.7;
+}
+@media (max-width: 568px) {
+  .pimg1 .pimg2 .pimg3 {
+    background-attachment: scroll;
+  }
+}
