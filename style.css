@@ -78,19 +78,18 @@ body.dreamplace .pimg3 {
 }
 
 body.home .pimg1 {
-  background-image: url("https://paradoxmarketing.io/wp-content/uploads/2021/06/essentials-elements-of-a-homepage_-logo.jpg");
-}
-body.home .pimg2 {
   background-image: url("https://homepageonline.co.uk/wp-content/uploads/2018/11/click-homepage-online-estate-agents-ni-limavady-derry-londonderry-property-sales-logo.jpg");
 }
+body.home .pimg2 {
+  background-image: url("https://st2.depositphotos.com/3591429/12552/i/450/depositphotos_125524360-stock-photo-diversity-friends-near-wall-with.jpg");
+}
 body.home .pimg3 {
-  background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*1P6DDHPSDCEyZ3AE.png");
+  background-image: url("https://www.lifewire.com/thmb/jdNwRe1mIhF2vTyUm9bj-jdI8fU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/home-button-2ed446e65338405a9f92f99bdfb3368f.png");
 }
 
 .section {
   text-align: center;
-  padding: 50px 20px; /* better horizontal padding on small screens */
-  max-width: 900px; /* limits line length for easier reading */
+  padding: 50px 20px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 1.6;
