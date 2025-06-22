@@ -37,22 +37,51 @@
         background-color: #04aa6d;
         color: white;
       }
+
       h1 {
         text-align: center;
         text-decoration: underline;
         text-transform: capitalize;
         margin-bottom: 20px;
       }
+
       .carousel-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         height: 600px;
       }
+
       .myslides {
         display: none;
-        max-height: 100%;
-        max-width: 100%;
+        height: 600px;
+        width: 900px;
+        object-fit: cover;
+      }
+
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .prev-btn {
+        left: 10px;
+      }
+
+      .next-btn {
+        right: 10px;
+      }
+
+      .carousel-btn:hover {
+        background-color: #555;
       }
     </style>
   </head>
@@ -67,51 +96,24 @@
       <a href="gaming.html">Gaming</a>
       <a href="hobby.html">Hobby</a>
     </div>
+
     <h1>My Favourite Memories</h1>
+
     <div class="carousel-container">
-      <img
-        class="myslides"
-        src="https://scontent.fdac184-1.fna.fbcdn.net/v/t1.6435-9/40313224_674889459540607_5150258510570717184_n.jpg?stp=c120.0.720.720a_dst-jpg_s206x206_tt6&_nc_cat=100&ccb=1-7&_nc_sid=50ad20&_nc_ohc=rkEV6-75sgUQ7kNvwH1kZyv&_nc_oc=AdniHzhllRy2P4polWi3JNS56sQm3Q_X4uYcFJM00TPVz_K2FYeWdz_IEGb2TNpiLw0&_nc_zt=23&_nc_ht=scontent.fdac184-1.fna&_nc_gid=w9S4tQUcqc8H6gahfyYv1Q&oh=00_AfM0x9yrDy-zk1YxmehbnNmL-BoCvWlpxfHfUZLf0B4qjg&oe=687C785E"
-        height="600"
-        width="900"
-        alt="Slide1"
-      />
-      <img
-        class="myslides"
-        src="https://scontent.fdac184-1.fna.fbcdn.net/v/t39.30808-6/494840758_2526068177756050_7813842797378579426_n.jpg?stp=c90.0.540.540a_dst-jpg_s206x206_tt6&_nc_cat=101&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=Ew4DE1C8DsoQ7kNvwGkExF_&_nc_oc=AdliivlVTyTCK9tXU2NE0lBADg12RNHdsjq17gBYRd0MIvG0pPXN4yV4mQOwNrW_-rw&_nc_zt=23&_nc_ht=scontent.fdac184-1.fna&_nc_gid=4XXr2hGhS2rusTJJTrWh2Q&oh=00_AfObNnRSsIUeYUnAUWl1byRG6FjxPbmtRNSXV96tue0nxw&oe=685AC197"
-        height="600"
-        width="900"
-        alt="Slide2"
-      />
-      <img
-        class="myslides"
-        src="https://scontent.fdac184-1.fna.fbcdn.net/v/t1.6435-9/35463646_10204574827127829_5814002129429331968_n.jpg?stp=c153.0.918.918a_dst-jpg_s206x206_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=XiOFOCDIlOQQ7kNvwG81KQK&_nc_oc=AdlUVyrRbrlkjdeBCcwKQtIxA4DtoC2o84g3A6zsCsdMH2tezhrAvJ-Iqc8AmLWRJyg&_nc_zt=23&_nc_ht=scontent.fdac184-1.fna&_nc_gid=4XXr2hGhS2rusTJJTrWh2Q&oh=00_AfOq8fEflgdGI24voZwmcDhQaPMf40XA84pYFnTUtoJEMw&oe=687C76C6"
-        height="600"
-        width="900"
-        alt="Slide3"
-      />
-      <img
-        class="myslides"
-        src="https://scontent.fdac184-1.fna.fbcdn.net/v/t39.30808-6/497496814_10213166521074808_6205495508928678919_n.jpg?stp=c0.340.1019.1019a_dst-jpg_s206x206_tt6&_nc_cat=108&ccb=1-7&_nc_sid=db443f&_nc_ohc=r8SJQMH4vJwQ7kNvwEV6oDs&_nc_oc=AdmzWR1-lpgF7TOq2SMVnaKmyLVJ_0o8dB00_ogqWMEvd6uZ4bz2fkaLc395js-LLRI&_nc_zt=23&_nc_ht=scontent.fdac184-1.fna&_nc_gid=jLwiAaKoCrexxYQE7GcuIA&oh=00_AfO5zDe_ePXPumoiQpGjxStPFc-JG-UDalfJabx01k7ppg&oe=685AB6DD"
-        height="600"
-        width="900"
-        alt="Slide4"
-      />
-      <img
-        class="myslides"
-        src="https://scontent.fdac184-1.fna.fbcdn.net/v/t39.30808-6/464520143_10212230832483178_8408170347106600200_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=1-7&_nc_sid=714c7a&_nc_ohc=ibDuR4VP82wQ7kNvwGP7SBA&_nc_oc=AdlHm2RREqEsobIbdUr2ZwEerIe0AfpK3Ans_c7vSJPrn8yFQDtgQ5EXJiPIv_AoMn8&_nc_zt=23&_nc_ht=scontent.fdac184-1.fna&_nc_gid=U1RK9YjWe--kG8wrLq9jKg&oh=00_AfOzes8or8MDWQsvEPW9ntUE_gf_GpYKi7DlUttgwBGvsA&oe=685ABF17"
-        height="600"
-        width="900"
-        alt="Slide5"
-      />
-      <img
-        class="myslides"
-        src="https://scontent.fdac184-1.fna.fbcdn.net/v/t39.30808-6/494061784_2485832001779668_4258532881228093798_n.jpg?stp=c0.79.720.720a_dst-jpg_s206x206_tt6&_nc_cat=104&ccb=1-7&_nc_sid=6439a4&_nc_ohc=Vb9hCq4xzrAQ7kNvwHhdIe-&_nc_oc=Admb4k7rcIp3IYwuCHzUUGzszj0ule4JvmJtm0P8X3Iz0fVnHH_UZGXdrZba0z4AlAI&_nc_zt=23&_nc_ht=scontent.fdac184-1.fna&_nc_gid=gTib1RwMvJiNjMQ1Dj_O-A&oh=00_AfNouoB8asiiVupcqvTA0ajsTEFQ1RJN2R7nYnsMrodfvw&oe=685ACAA9"
-        height="600"
-        width="900"
-        alt="Slide6"
-      />
+      <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <img class="myslides" src="img1.jpg" alt="Slide1" />
+      <img class="myslides" src="img2.jpg" alt="Slide2" />
+      <img class="myslides" src="img3.jpg" alt="Slide3" />
+      <img class="myslides" src="img4.jpg" alt="Slide4" />
+      <img class="myslides" src="img5.jpg" alt="Slide5" />
+      <img class="myslides" src="img6.jpg" alt="Slide6" />
+      <button class="carousel-btn next-btn" onclick="changeSlide(1)">
+        &#10095;
+      </button>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

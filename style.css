@@ -1,56 +1,148 @@
-p {
-  font-size: 20px;
-}
-
 .pimg1,
 .pimg2,
 .pimg3 {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.85;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 400px;
+  transition: opacity 0.3s ease;
 }
 
-.pimg1 {
-  background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,w_1406,h_790,x_0,y_515/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/Ashton-Hall-2-c48826f0129ffe2d4bb852b17de439e7.jpg");
-  min-height: 400px;
+.pimg1:hover,
+.pimg2:hover,
+.pimg3:hover {
+  opacity: 1; /* subtle hover effect */
 }
-.pimg2 {
-  background-image: url("https://img.etimg.com/thumb/width-1600,height-900,imgsize-408673,resizemode-75,msid-67189761/magazines/panache/youtube-star-danish-zehen-passes-away-in-car-accident-in-mumbai.jpg");
-  min-height: 400px;
+/* School page background images */
+body.school .pimg1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Seal_of_Adamjee_Cantonment_Public_School.svg/1200px-Seal_of_Adamjee_Cantonment_Public_School.svg.png");
 }
-.pimg3 {
-  background-image: url("https://images.news18.com/ibnlive/uploads/2025/04/ishowspeed-origin-story-2025-04-5ff8430bcf1a0e4d5529a03017774a20-16x9.png?impolicy=website&width=640&height=360");
-  min-height: 400px;
+body.school .pimg2 {
+  background-image: url("https://www.acps.edu.bd/media/imgAll/08-10-2016-1475917235.jpg");
 }
+body.school .pimg3 {
+  background-image: url("https://www.acps.edu.bd/media/imgAll/04-08-2018-1533357410.jpg");
+}
+
+body.hobby .pimg1 {
+  background-image: url("https://labourlawadvisor.in/blog/wp-content/uploads/2019/04/Horizontal-Thumbnail-1.jpg");
+}
+body.hobby .pimg2 {
+  background-image: url("https://media.istockphoto.com/id/1222703360/vector/outline-colorful-doodle-hobbies-set-stay-home-concept-top-table-and-video-games-painting.jpg?s=612x612&w=0&k=20&c=X7CCSAmyd0_ZNk-PTvGNsd863U1am4aAy5spTcE2e5s=");
+}
+body.hobby .pimg3 {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1200/1*fZ2G2lCIQozmeyHRfZ0uFQ.jpeg");
+}
+
+body.gaming .pimg1 {
+  background-image: url("https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg");
+}
+body.gaming .pimg2 {
+  background-image: url("https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-543b60e5e4a0af08f8001e8faf7e1bc3");
+}
+body.gaming .pimg3 {
+  background-image: url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c6c50b680c5e1846a9c77f86d5aa357d46584ffe-1920x1080.png?auto=format&fit=fill&q=80&w=1082");
+}
+
+body.contact .pimg1 {
+  background-image: url("https://www.shutterstock.com/image-vector/bright-red-oval-sticker-button-600nw-2411194537.jpg");
+}
+body.contact .pimg2 {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5075/5075658.png");
+}
+body.contact .pimg3 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/166/553/non_2x/contact-me-icons-vector.png");
+}
+
+body.about .pimg1 {
+  background-image: url("https://www.themarketingsage.com/wp-content/uploads/2015/08/about-me-leon-severan-we-buy-houses.jpg");
+}
+body.about .pimg2 {
+  background-image: url("https://c8.alamy.com/comp/2PFHFE3/writing-displaying-text-about-me-word-written-on-my-personal-characteristics-information-likes-and-dislikes-2PFHFE3.jpg");
+}
+body.about .pimg3 {
+  background-image: url("https://creativelifestorywork.com/wp-content/uploads/2022/08/creative-life-story-work-all-about-me-790x590.png");
+}
+
+body.dreamplace .pimg1 {
+  background-image: url("https://career-advice.jobs.ac.uk/wp-content/uploads/Japan-e1634207070862.jpg.optimal.jpg");
+}
+body.dreamplace .pimg2 {
+  background-image: url("https://www.pelago.com/img/countries/japan/1201-0821_japan-book-things-to-do-pelago.jpg");
+}
+body.dreamplace .pimg3 {
+  background-image: url("https://a.storyblok.com/f/55469/1176x732/3070577851/jp_-_2022.png");
+}
+
+body.home .pimg1 {
+  background-image: url("https://paradoxmarketing.io/wp-content/uploads/2021/06/essentials-elements-of-a-homepage_-logo.jpg");
+}
+body.home .pimg2 {
+  background-image: url("https://homepageonline.co.uk/wp-content/uploads/2018/11/click-homepage-online-estate-agents-ni-limavady-derry-londonderry-property-sales-logo.jpg");
+}
+body.home .pimg3 {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*1P6DDHPSDCEyZ3AE.png");
+}
+
 .section {
   text-align: center;
-  padding: 50px;
+  padding: 50px 20px; /* better horizontal padding on small screens */
+  max-width: 900px; /* limits line length for easier reading */
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
 }
+
 .section-dark {
   background-color: #282e34;
   color: #ddd;
 }
+
 .ptext {
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* better centering */
   width: 100%;
   text-align: center;
-  color: #000;
-  font-size: 27px;
-  letter-spacing: 8px;
+  color: #fff; /* changed to white for better contrast */
+  font-size: 28px;
+  letter-spacing: 6px;
   text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
+
 .ptext .border {
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.7);
   color: #fff;
-  padding: 20px;
-  opacity: 0.7;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  letter-spacing: 4px;
 }
+
 @media (max-width: 568px) {
-  .pimg1 .pimg2 .pimg3 {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
     background-attachment: scroll;
+    min-height: 250px;
+  }
+  .section {
+    padding: 30px 15px;
+    font-size: 16px;
+  }
+  .ptext {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .ptext .border {
+    padding: 10px 20px;
+    letter-spacing: 2px;
   }
 }
