@@ -1,20 +1,9 @@
 let index = 0;
-showSlide(index);
-
-function changeSlide(n) {
-  index += n;
-  showSlide(index);
-}
+const slides = document.getElementsByClassName("myslides");
 
 function showSlide(n) {
-  const slides = document.getElementsByClassName("myslides");
-
-  if (n >= slides.length) {
-    index = 0;
-  }
-  if (n < 0) {
-    index = slides.length - 1;
-  }
+  if (n >= slides.length) index = 0;
+  if (n < 0) index = slides.length - 1;
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -22,3 +11,12 @@ function showSlide(n) {
 
   slides[index].style.display = "block";
 }
+
+function changeSlide(n) {
+  index += n;
+  showSlide(index);
+}
+
+window.onload = () => {
+  showSlide(index);
+};
